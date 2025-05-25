@@ -48,29 +48,30 @@ const Portfolio = () => {
       clientType: 'Floral Design Studio',
       clientAudience: 'Event planners, wedding couples, and flower enthusiasts',
       overview: 'Bloom Floral Studio needed an e-commerce website that showcased their beautiful arrangements while making it easy for customers to place orders for events or delivery.',
-      challenge: "The client was struggling with an outdated website that didn't reflect the elegance of their brand. Their manual ordering process was time-consuming and error-prone.",
-      solution: 'We designed a clean, elegant e-commerce platform with a dual focus: a streamlined shopping experience for everyday flower purchases and an inspirational portfolio section for event planning.',
+      challenge: "Bloom Floral Studio had built a reputation for exquisite arrangements but was losing potential customers due to their outdated website and inefficient ordering process. They were manually handling all orders via phone and email, causing missed opportunities and administrative errors.",
+      solution: 'We created an elegant, conversion-focused e-commerce platform that reflected their artistic brand while implementing a powerful inventory management system. Our solution included seamless event booking functionality and a visual-forward product showcase that delighted their customers.',
       features: [
-        'Custom e-commerce platform with inventory management',
-        'Event booking system with calendar integration',
-        'Product gallery with zoom functionality and 360° views',
-        'Mobile responsive design optimized for all devices',
-        'Integrated payment processing with multiple options',
-        'Customer account area with order history and favorites'
+        'Custom e-commerce platform with seasonal inventory management',
+        'Event booking system with calendar integration and deposit handling',
+        'Product gallery with professional photography and 360° views',
+        'Mobile responsive design optimized for on-the-go browsing',
+        'Integrated payment processing with installment options for large events',
+        'Customer account area with order history, favorites, and upcoming event details'
       ],
       technologies: [
-        'React.js',
-        'Node.js',
-        'MongoDB',
-        'Stripe Payment Integration',
-        'AWS S3 for image storage',
-        'SendGrid for email notifications'
+        'React.js with custom animations',
+        'Node.js and Express backend',
+        'MongoDB with custom CMS',
+        'Stripe Payment Integration with recurring billing',
+        'AWS S3 for image optimization and storage',
+        'SendGrid for transactional and marketing emails'
       ],
       results: [
-        '138% increase in online orders within the first three months',
-        '42% reduction in administrative work related to order processing',
-        '67% increase in average order value through suggested add-ons',
-        'Featured in Local Business Monthly as a digital transformation success story'
+        '138% increase in online orders within the first quarter post-launch',
+        '42% reduction in administrative work through automated order processing',
+        '67% increase in average order value through strategic upselling features',
+        'Featured in Local Business Monthly as a "Digital Transformation Success Story"',
+        'Successfully handled a 250% increase in Valentine\'s Day orders compared to previous year'
       ],
       images: [
         'https://images.unsplash.com/photo-1558905511-25d6800b5dc3?w=800',
@@ -79,55 +80,56 @@ const Portfolio = () => {
       ],
       thumbnailImage: 'https://images.unsplash.com/photo-1558905511-25d6800b5dc3?w=800',
       testimonial: {
-        text: "Native Web Design captured the essence of our brand perfectly. The website is not only beautiful but also functional, leading to a significant increase in online orders.",
+        text: "Working with Native Web Design completely transformed our business. They didn't just build us a website; they created a digital experience that perfectly captures the beauty and elegance of our floral designs. Our customers constantly compliment how easy it is to order, and our staff loves the streamlined backend. Sales have increased beyond our expectations.",
         author: "Emma Richards",
-        position: "Owner, Bloom Floral Studio",
+        position: "Founder & Creative Director, Bloom Floral Studio",
         avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150"
       },
       deliverables: [
-        'Custom e-commerce website with CMS',
-        'Mobile responsive design',
-        'Brand style guide',
-        'Training session for staff',
-        'SEO optimization',
-        '3 months of priority support'
+        'Custom e-commerce platform with admin dashboard',
+        'Mobile-first responsive design',
+        'Brand style guide and visual identity refinement',
+        'Staff training program and documentation',
+        'SEO optimization and local search strategy',
+        '6 months of priority support and maintenance'
       ],
-      timeline: '8 weeks',
+      timeline: '10 weeks',
       year: 2023
     },
     {
       id: 2,
       title: 'Atlas Fitness App',
       category: 'Mobile App',
-      clientType: 'Fitness Company',
-      clientAudience: 'Fitness enthusiasts and personal trainers',
-      overview: 'Atlas Fitness needed a mobile app that would allow users to track workouts, set goals, and connect with trainers for a personalized fitness experience.',
-      challenge: 'Atlas Fitness was losing clients to larger fitness chains with dedicated mobile apps. They needed a solution that would differentiate them in the market.',
-      solution: 'We developed a comprehensive fitness app that not only tracks workouts but creates a community around the Atlas Fitness brand. The app includes personalized workout plans and progress tracking.',
+      clientType: 'Boutique Fitness Studio Chain',
+      clientAudience: 'Fitness enthusiasts, personal training clients, and health-conscious professionals',
+      overview: 'Atlas Fitness needed a premium mobile app to enhance their in-person training experience, retain members during the pandemic, and create a digital community around their brand.',
+      challenge: 'Atlas Fitness was losing members to national chains with sophisticated digital offerings. With three physical locations, they needed a solution that would strengthen client relationships, provide value between in-person sessions, and create a competitive advantage in their market.',
+      solution: 'We developed a comprehensive fitness ecosystem that bridges the physical and digital experience. The app includes personalized workout programs, progress tracking with visual analytics, trainer messaging, and community features that reinforce the Atlas Fitness brand identity and methodology.',
       features: [
-        'Workout tracking with custom exercise library',
-        'Goal setting with milestone celebrations',
-        'Trainer-client messaging and video consultation',
-        'Exercise library with HD video demonstrations',
-        'Integration with popular wearable devices',
-        'Nutrition tracking and meal planning',
-        'Community challenges and leaderboards'
+        'Personalized workout libraries with HD video demonstrations',
+        'Advanced progress tracking with body composition analytics',
+        'Trainer-client messaging with video consultation scheduling',
+        'Nutrition tracking integrated with popular meal planning services',
+        'Class booking with waitlist notifications and location preference',
+        'Community challenges with achievement badges and rewards',
+        'Apple Watch and Garmin integration for workout tracking'
       ],
       technologies: [
-        'React Native',
-        'Firebase',
-        'Redux',
-        'Node.js backend',
-        'MongoDB',
-        'WebRTC for video calls',
-        'Apple HealthKit & Google Fit integration'
+        'React Native for cross-platform consistency',
+        'Firebase for real-time data synchronization',
+        'Redux for state management',
+        'Node.js backend with GraphQL API',
+        'MongoDB with sharding for performance',
+        'WebRTC for secure video consultations',
+        'Apple HealthKit & Google Fit integrations'
       ],
       results: [
-        '94% client retention rate compared to 65% pre-app',
-        'Over 15,000 downloads in the first six months',
-        '4.8/5 average rating across app stores',
-        '76% of users engage with the app at least 3 times per week',
-        'Featured in "Best Fitness Apps of 2023" by FitTech Magazine'
+        '94% member retention during pandemic (industry average was 63%)',
+        'Over 18,000 downloads with 82% active monthly users',
+        '4.8/5 average rating across iOS and Android platforms',
+        '76% of users engage with the app at least 4 times weekly',
+        'Featured in "Top 10 Fitness Apps of 2023" by Health & Fitness Magazine',
+        'Successful expansion to two additional locations based on digital engagement metrics'
       ],
       images: [
         'https://images.unsplash.com/photo-1598520106830-8c45c2035460?w=800',
@@ -136,18 +138,18 @@ const Portfolio = () => {
       ],
       thumbnailImage: 'https://images.unsplash.com/photo-1598520106830-8c45c2035460?w=800',
       testimonial: {
-        text: "Working with Native Web Design was an incredible experience. They understood our vision and translated it into a beautiful, functional app that our users love.",
+        text: "Native Web Design didn't just understand our technical requirements—they understood our business and our clients. The app they created has become central to our brand experience. Our trainers love the ability to stay connected with clients between sessions, and our members constantly tell us how the app keeps them motivated and accountable. It's helped us not just survive but thrive during challenging times for the fitness industry.",
         author: "David Mitchell",
-        position: "Founder, Atlas Fitness",
+        position: "Founder & CEO, Atlas Fitness",
         avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150"
       },
       deliverables: [
-        'Native mobile app for iOS and Android',
-        'Custom admin dashboard',
-        'API documentation',
-        'App Store and Play Store listings',
-        'Marketing materials',
-        '6 months of technical support and updates'
+        'Native mobile apps for iOS and Android',
+        'Comprehensive admin dashboard for staff',
+        'API documentation and integration guides',
+        'App Store and Play Store optimization',
+        'Marketing assets and launch campaign support',
+        '12 months of technical support and feature updates'
       ],
       timeline: '16 weeks',
       year: 2023
@@ -156,35 +158,36 @@ const Portfolio = () => {
       id: 3,
       title: 'Savant Financial',
       category: 'Web Design',
-      clientType: 'Financial Advisory Firm',
-      clientAudience: 'High net worth individuals and corporate clients',
-      overview: 'Savant Financial needed a professional website that conveyed trust, expertise, and accessibility to potential clients while simplifying complex financial concepts.',
-      challenge: 'Savant Financial was struggling to convert leads into clients because their website appeared outdated and failed to communicate their unique approach to financial planning.',
-      solution: 'We created a sophisticated yet welcoming website that uses clear visual metaphors to explain complex financial concepts. The site features interactive calculators and personalized client portals.',
+      clientType: 'Wealth Management Firm',
+      clientAudience: 'High-net-worth individuals, business owners, and corporate executives',
+      overview: 'Savant Financial needed a sophisticated digital presence that would establish trust, simplify complex financial concepts, and streamline client acquisition for their growing firm.',
+      challenge: 'Despite managing over $500M in assets, Savant Financial was struggling with an outdated website that failed to convey their expertise and unique investment philosophy. Their digital presence was undermining in-person impressions and hindering growth.',
+      solution: 'We created a premium digital experience focused on clarity and confidence. The site employs thoughtful information architecture to guide prospects through Savant\'s approach, with interactive tools that demonstrate value before the first meeting and a secure client portal for existing customers.',
       features: [
-        'Professional, trust-building design with subtle animations',
-        'Interactive financial planning tools and calculators',
-        'Secure client portal integration',
-        'Team member profiles with expertise highlighting',
-        'Case studies showcasing client success stories',
-        'Blog with financial insights and market analysis',
-        'Compliance-friendly content management system'
+        'Sophisticated design system with subtle animations and micro-interactions',
+        'Interactive financial calculators and retirement planning tools',
+        'Secure client portal with portfolio visualization',
+        'Team member profiles highlighting credentials and specialties',
+        'Case studies segmented by client archetypes',
+        'Financial insights blog with compliance-friendly CMS',
+        'Webinar registration and resource library'
       ],
       technologies: [
-        'Next.js',
-        'TypeScript',
-        'Prismic CMS',
-        'Chart.js for financial visualizations',
-        'AWS hosting with enhanced security',
-        'HubSpot CRM integration',
-        'SSL encryption and data protection features'
+        'Next.js for performance and SEO',
+        'TypeScript for type safety',
+        'Prismic CMS with custom workflows',
+        'Chart.js for dynamic financial visualizations',
+        'AWS infrastructure with enhanced security protocols',
+        'HubSpot CRM integration for lead nurturing',
+        'SOC 2 compliant data handling'
       ],
       results: [
-        '156% increase in qualified leads from the website',
-        '32% improvement in average time spent on site',
-        '28% increase in client acquisition within 6 months',
-        'Reduced client onboarding time by 40% through portal features',
-        'Won "Best Financial Services Website" at the Regional Business Web Awards'
+        '156% increase in qualified consultation requests',
+        '32% improvement in time spent on key service pages',
+        '28% increase in AUM within 6 months of launch',
+        'Reduced client onboarding time by 40% through portal automation',
+        'Won "Best Financial Services Website" at the Regional Business Web Awards',
+        'Successfully passed SEC marketing compliance review with zero issues'
       ],
       images: [
         'https://images.unsplash.com/photo-1553484771-689577a88a45?w=800',
@@ -193,55 +196,57 @@ const Portfolio = () => {
       ],
       thumbnailImage: 'https://images.unsplash.com/photo-1553484771-689577a88a45?w=800',
       testimonial: {
-        text: "Native Web Design took the time to understand the nuances of our industry and the specific needs of our clientele. They created a website that perfectly balances professionalism with approachability.",
-        author: "Jennifer Harding",
+        text: "Native Web Design was exceptional from start to finish. They took the time to understand the complexities of our industry and the specific needs of our clientele. The result is a website that perfectly balances sophistication with accessibility. Our team is proud to share it with prospects, and we've seen a significant increase in both the quantity and quality of leads since launch.",
+        author: "Jennifer Harding, CFA",
         position: "Managing Partner, Savant Financial",
         avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=150"
       },
       deliverables: [
-        'Responsive website with custom CMS',
+        'Responsive website with custom financial tools',
         'Secure client portal integration',
-        'Interactive financial tools',
-        'Content strategy documentation',
-        'SEO optimization',
-        'GDPR and financial compliance review'
+        'Content strategy and SEO implementation',
+        'Custom icon system and illustration library',
+        'Compliance documentation for regulators',
+        'Team photography direction',
+        'Ongoing performance optimization'
       ],
-      timeline: '10 weeks',
+      timeline: '12 weeks',
       year: 2022
     },
     {
       id: 4,
       title: 'Evergreen Landscaping',
       category: ['Web Design', 'Branding'],
-      clientType: 'Landscaping Company',
-      clientAudience: 'Homeowners and commercial property managers',
-      overview: 'Evergreen Landscaping needed a complete brand refresh and a new website to showcase their services and portfolio of landscape design projects.',
-      challenge: "After 15 years in business, Evergreen Landscaping's brand had become outdated and inconsistent across their materials. Their website was difficult to navigate, especially on mobile devices.",
-      solution: 'We conducted a comprehensive brand refresh, creating a new visual identity that reflected their commitment to sustainable landscaping. The website redesign focused on showcasing their impressive portfolio.',
+      clientType: 'Sustainable Landscaping Company',
+      clientAudience: 'Eco-conscious homeowners and commercial property managers',
+      overview: 'Evergreen Landscaping needed a complete brand refresh and website redesign to reposition themselves as leaders in sustainable outdoor design and attract premium clients.',
+      challenge: "After 15 years in business, Evergreen's visual identity had become fragmented and dated. Their website failed to showcase their award-winning projects effectively, and they were being perceived as a basic lawn maintenance service rather than the high-end sustainable landscape design firm they had evolved into.",
+      solution: 'We executed a comprehensive rebranding that emphasized their sustainable practices and artistic approach to landscaping. The website redesign focused on visual storytelling with impressive before/after comparisons and clearly articulated their environmentally-friendly methodologies.',
       features: [
-        'Complete brand identity redesign (logo, color palette, typography)',
-        'Responsive website with virtual landscape planner tool',
-        'Interactive before/after project comparisons',
-        'Service estimator calculator',
-        'Seasonal maintenance reminder system',
-        'Integrated blog with gardening tips and landscape inspiration',
-        'Customer testimonial video integration'
+        'Complete brand identity system (logo, typography, color palette, patterns)',
+        'Responsive website with interactive project gallery',
+        'Before/after project comparison tool with interactive slider',
+        'Sustainable practices educational content hub',
+        'Service estimator with qualification questionnaire',
+        'Seasonal maintenance guide with automated reminders',
+        'Project planning visualization tool'
       ],
       technologies: [
-        'WordPress with custom theme',
-        'Advanced Custom Fields',
-        'GSAP for smooth animations',
-        'Mapbox integration for service area visualization',
-        'WebGL for interactive elements',
-        'Instagram API for social feed integration',
-        'Schema markup for local SEO'
+        'WordPress with headless configuration',
+        'Advanced Custom Fields for content management',
+        'GSAP for scroll-triggered animations',
+        'Mapbox for service area visualization',
+        'WebGL for 3D landscape previews',
+        'Custom photography post-processing pipeline',
+        'Schema markup for local SEO optimization'
       ],
       results: [
-        '186% increase in quote requests within 3 months of launch',
+        '186% increase in qualified leads within first quarter',
         '42% increase in average project value',
         '64% reduction in bounce rate on mobile devices',
-        'Featured in "Landscape Design Today" magazine',
-        'Secured 3 major commercial contracts due to improved portfolio presentation'
+        'Featured in "Sustainable Homes & Gardens" magazine',
+        'Secured three major municipal contracts worth $1.2M',
+        'Won "Best Green Business Website" at industry awards'
       ],
       images: [
         'https://images.unsplash.com/photo-1558370781-d6196949e317?w=800',
@@ -250,52 +255,52 @@ const Portfolio = () => {
       ],
       thumbnailImage: 'https://images.unsplash.com/photo-1558370781-d6196949e317?w=800',
       testimonial: {
-        text: "Our new website and brand identity have completely transformed our business. The number of quality leads we receive has doubled, and clients frequently mention how impressed they are with our online presence.",
+        text: "The rebranding and website Native Web Design created for us has completely transformed how potential clients perceive our company. We're now attracting exactly the type of high-end clients we want to work with, and they're coming to us already understanding our sustainable approach. The before/after comparison tool has been particularly effective at demonstrating the value of our services.",
         author: "Michael Green",
-        position: "Owner, Evergreen Landscaping",
+        position: "Founder & Lead Designer, Evergreen Landscaping",
         avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150"
       },
       deliverables: [
-        'Brand identity package (logo, business cards, vehicle graphics)',
-        'Style guide and brand standards document',
-        'Responsive website with CMS',
-        'Photo shoot coordination',
-        'Print materials (brochures, proposal templates)',
-        'Social media profile updates',
-        'Staff training on CMS usage'
+        'Brand identity system with usage guidelines',
+        'Responsive website with custom project showcase',
+        'Print collateral (business cards, brochures, proposal templates)',
+        'Vehicle and uniform graphics',
+        'Custom photography of completed projects',
+        'Social media profile redesign',
+        'Content creation strategy and editorial calendar'
       ],
-      timeline: '12 weeks',
+      timeline: '14 weeks',
       year: 2022
     },
     {
       id: 5,
       title: 'Artisan Bakery',
       category: ['E-commerce', 'Branding'],
-      clientType: 'Specialty Bakery',
-      clientAudience: 'Food enthusiasts and gift shoppers',
-      overview: 'Artisan Bakery needed an e-commerce site to sell their specialty baked goods and gift boxes nationwide, expanding beyond their local customer base.',
-      challenge: 'Artisan Bakery had a loyal local following but was limited by their physical location. They needed to scale their business through online sales while ensuring their products arrived fresh and intact.',
-      solution: 'We created a mouthwatering e-commerce experience that highlighted the artisanal quality of their products with rich storytelling and beautiful photography. The site includes an intelligent inventory management system.',
+      clientType: 'Specialty Sourdough Bakery',
+      clientAudience: 'Food enthusiasts, gift shoppers, and corporate clients',
+      overview: 'Artisan Bakery needed to expand beyond their local storefront with an e-commerce platform that could handle nationwide shipping of their award-winning sourdough bread and specialty baked goods.',
+      challenge: 'Despite winning national awards, Artisan Bakery was limited by their physical location. They needed to scale their business through e-commerce while preserving their artisanal brand story and solving complex logistical challenges around shipping perishable products.',
+      solution: 'We created a storytelling-focused e-commerce experience that brings customers into the world of traditional breadmaking. The site features beautiful product photography, baker profiles, and a sophisticated inventory management system that balances production capacity with demand forecasting.',
       features: [
-        'Storytelling-focused product pages with production process videos',
-        'Gift customization tools with real-time preview',
-        'Subscription service with flexible delivery scheduling',
-        'Production capacity management system',
-        'Intelligent shipping calculator with weather considerations',
-        'Recipe blog with ingredient cross-selling',
-        'Baker profiles highlighting craftsmanship'
+        'Immersive product pages with breadmaking process videos',
+        'Custom gift box builder with real-time preview',
+        'Subscription service with flexible delivery schedules',
+        'Intelligent shipping algorithm accounting for climate zones',
+        'Production capacity management tied to order volume',
+        'Corporate gifting portal with bulk ordering',
+        'Recipe blog with ingredient cross-selling'
       ],
       technologies: [
-        'Shopify Plus with custom theme',
+        'Shopify Plus with headless frontend',
         'React for interactive elements',
-        'Klaviyo for email marketing',
-        'Custom inventory management integration',
-        'ShipStation integration with custom logic',
+        'Klaviyo for personalized marketing automation',
+        'Custom inventory management system',
+        'Climate-aware shipping logic with ShipStation',
         'Yotpo for reviews and loyalty program',
-        'Google Analytics enhanced e-commerce'
+        'Enhanced Google Analytics with purchase funnel tracking'
       ],
       results: [
-        '327% revenue growth in the first year of online sales',
+        '327% revenue growth in first year of e-commerce operations',
         '43% of customers become repeat buyers within 60 days',
         '28% of revenue now comes from subscription boxes',
         'Featured in Food & Wine magazine\'s "Best Online Bakeries"',
@@ -309,57 +314,57 @@ const Portfolio = () => {
       ],
       thumbnailImage: 'https://images.unsplash.com/photo-1591688515527-f7b20bd05902?w=800',
       testimonial: {
-        text: "Working with Native Web Design transformed our small local bakery into a nationwide brand. Their e-commerce expertise helped us solve complex challenges around shipping perishable products.",
+        text: "Native Web Design didn't just build us a web store—they helped us reimagine our entire business model. Their team took the time to understand our production constraints and the unique challenges of shipping perishable products. The solutions they implemented have allowed us to reach customers nationwide without compromising on quality or overwhelming our production capacity. The storytelling approach to our product pages has been particularly effective at conveying the care that goes into our baking process.",
         author: "Clara Martinez",
         position: "Founder & Head Baker, Artisan Bakery",
         avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150"
       },
       deliverables: [
-        'Custom Shopify e-commerce store',
-        'Brand refinement (logo enhancement, packaging design)',
+        'Custom Shopify e-commerce platform',
+        'Brand refinement and packaging design system',
         'Product photography art direction',
-        'Email marketing templates and automation setup',
-        'Inventory and fulfillment system integration',
-        'Staff training and documentation',
-        'Ongoing conversion rate optimization'
+        'Shipping strategy and logistics consultation',
+        'Inventory and production forecasting system',
+        'Staff training and fulfillment workflow documentation',
+        'Email marketing strategy and automation setup'
       ],
-      timeline: '10 weeks',
+      timeline: '12 weeks',
       year: 2023
     },
     {
       id: 6,
       title: 'Horizon Travel',
       category: ['Web Design', 'E-commerce'],
-      clientType: 'Luxury Travel Agency',
-      clientAudience: 'Adventure travelers and luxury vacation seekers',
-      overview: 'Horizon Travel needed a website that inspired wanderlust while providing practical booking capabilities for their curated travel experiences.',
-      challenge: 'Horizon Travel was struggling to convert their impressive offline service into an equally premium online experience. Their existing website failed to capture the excitement and exclusivity of their custom travel packages.',
-      solution: 'We created an immersive digital platform that combines stunning destination photography with seamless booking functionality. The site takes users on a visual journey through each destination while making trip planning intuitive.',
+      clientType: 'Luxury Adventure Travel Agency',
+      clientAudience: 'High-income professionals seeking unique travel experiences',
+      overview: 'Horizon Travel needed a digital platform that could capture the excitement of their curated adventure experiences while streamlining the complex booking process for their luxury expeditions.',
+      challenge: 'Horizon Travel offered exceptional in-person service but struggled to translate their high-touch experience to digital channels. Their existing website failed to convey the exclusivity of their offerings or handle the complex customization options for their trips.',
+      solution: 'We created an immersive digital platform that combines cinematic destination showcases with an intuitive booking system. Using rich media and interactive elements, the site inspires wanderlust while making complex trip planning feel effortless and exciting.',
       features: [
-        'Cinematic destination showcases with fullscreen video backgrounds',
+        'Immersive destination pages with fullscreen video backgrounds',
         'Interactive trip planner with drag-and-drop itinerary building',
-        'Real-time availability and pricing engine',
-        'Personalized travel recommendation engine',
-        'Virtual reality destination previews',
-        'Travel journal feature for past clients to share experiences',
-        'Multi-currency support with dynamic conversion'
+        'Dynamic pricing engine handling seasonal variations and custom add-ons',
+        'Personalized recommendation system based on travel history and preferences',
+        'Virtual reality destination previews with 360° experiences',
+        'Client travel journal with private photo sharing',
+        'Multi-currency support with transparent conversion'
       ],
       technologies: [
-        'Next.js for frontend',
-        'Sanity.io for content management',
-        'GraphQL API for data fetching',
-        'Three.js for immersive 3D elements',
-        'Stripe for secure payments',
-        'Twilio for SMS notifications',
-        'Custom booking engine with third-party API integrations'
+        'Next.js for performance-optimized frontend',
+        'Sanity.io for structured content management',
+        'GraphQL API for flexible data fetching',
+        'Three.js for immersive 3D destination models',
+        'Custom booking engine with complex pricing logic',
+        'Stripe for secure payments and installment plans',
+        'AWS CloudFront for global content delivery'
       ],
       results: [
-        '215% increase in online bookings within the first quarter',
-        '42% increase in average trip value',
+        '215% increase in online bookings within first quarter',
+        '42% increase in average trip value through upselling features',
         '68% of clients now complete their entire booking process online',
         'Reduced administrative work by 35 hours per week',
-        'Won "Best Travel Website" at the International Tourism Digital Awards',
-        'Featured as a case study at a major web design conference'
+        'Won "Best Luxury Travel Website" at International Tourism Digital Awards',
+        'Featured as a UX case study at a major design conference'
       ],
       images: [
         'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800',
@@ -368,57 +373,57 @@ const Portfolio = () => {
       ],
       thumbnailImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800',
       testimonial: {
-        text: "The website Native Web Design created for us perfectly captures the essence of luxury travel. It's not only beautiful but has significantly improved our booking conversion rate and operational efficiency.",
+        text: "Native Web Design has transformed our business by creating a digital experience that actually captures the magic of our travel offerings. The immersive destination pages and intuitive booking process have dramatically increased our online conversions. Even our most technology-averse travel advisors now proudly direct clients to the website, knowing it will enhance rather than diminish the personal service we're known for.",
         author: "Sophia Torres",
-        position: "Director, Horizon Travel",
+        position: "Managing Director, Horizon Travel",
         avatar: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?w=150"
       },
       deliverables: [
         'Custom website with integrated booking platform',
-        'Content strategy for destination pages',
-        'Custom photography direction and editing',
-        'Booking engine integration with CRM',
-        'Email marketing templates for follow-up sequences',
-        'Training program for travel agents',
-        'Comprehensive analytics dashboard'
+        'Destination content strategy and production',
+        'Custom photography art direction',
+        'Video production guidelines for destinations',
+        'CRM integration and data migration',
+        'Staff training program for booking management',
+        'Marketing automation setup for follow-up sequences'
       ],
-      timeline: '14 weeks',
+      timeline: '16 weeks',
       year: 2022
     },
     {
       id: 7,
       title: 'Pixel Perfect Photography',
       category: 'Web Design',
-      clientType: 'Photography Studio',
-      clientAudience: 'Potential clients seeking professional photography services',
-      overview: 'Pixel Perfect Photography needed a portfolio website that would showcase their work while attracting new clients and streamlining their booking process.',
-      challenge: 'As a high-end photography studio, Pixel Perfect needed a website that loaded their extensive portfolio quickly without sacrificing image quality. They also needed to streamline their booking and client communication process.',
-      solution: 'We designed a visually stunning portfolio site with advanced image optimization techniques that maintain quality while ensuring fast loading times. The integrated booking system and client portal have automated much of their administrative work.',
+      clientType: 'High-End Photography Studio',
+      clientAudience: 'Couples planning weddings, families, and commercial clients',
+      overview: 'Pixel Perfect Photography needed a portfolio website that would showcase their award-winning work while streamlining their client booking and image delivery workflow.',
+      challenge: 'As their reputation grew, Pixel Perfect was spending too much time on administrative tasks rather than photography. Their previous website loaded slowly, particularly for their international clients, and their booking process involved multiple platforms causing confusion and missed opportunities.',
+      solution: 'We designed a visually-focused platform that uses advanced image optimization techniques to deliver stunning visuals without sacrificing performance. The integrated booking system and client portal have automated their workflow from initial inquiry through to final image delivery.',
       features: [
-        'Progressive image loading with blur-up technique',
-        'Category-based portfolio with intuitive filtering',
-        'Integrated booking system with deposit payments',
-        'Client portal for image delivery and approvals',
-        'Photography package comparison tool',
-        'Location scouting map integration',
-        'Before/after editing showcases'
+        'Progressive image loading with blur-up effect for instant engagement',
+        'Category-based portfolio with intuitive filtering and favoriting',
+        'Integrated booking system with automatic contract generation',
+        'Secure client galleries with download options and sharing controls',
+        'Photography package comparison tool with add-on selection',
+        'Location scouting map with previous shoot examples',
+        'Before/after editing showcase with interactive slider'
       ],
       technologies: [
-        'Gatsby.js for performance',
-        'Cloudinary for advanced image processing',
-        'Netlify for hosting',
-        'GraphQL for data management',
-        'Stripe for payment processing',
-        'Custom lightbox with touch gestures',
-        'Intersection Observer for lazy loading'
+        'Gatsby.js for image optimization and performance',
+        'Cloudinary for advanced image transformations',
+        'Netlify for global CDN deployment',
+        'GraphQL for efficient data querying',
+        'Stripe for payment processing and invoicing',
+        'Custom lightbox with touch gestures and keyboard controls',
+        'Intersection Observer for seamless lazy loading'
       ],
       results: [
         '86% faster page load times compared to previous site',
-        '43% increase in contact form submissions',
+        '43% increase in contact form submissions from ideal clients',
         'Administrative time reduced from 15 hours to 3 hours per week',
         'Portfolio images now rank in Google Image Search for key terms',
-        'Featured in Professional Photographer Magazine',
-        '32% increase in average client spending'
+        'Featured in Professional Photographer Magazine as a digital case study',
+        '32% increase in average client spending through strategic package presentation'
       ],
       images: [
         'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800',
@@ -427,57 +432,58 @@ const Portfolio = () => {
       ],
       thumbnailImage: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800',
       testimonial: {
-        text: "Native Web Design understood exactly what a photography business needs in a website. The image optimization is impressive - my work loads quickly but looks stunning. The booking system has transformed my business operations.",
+        text: "Native Web Design truly understands the needs of a photography business. They created a website that not only showcases my work beautifully but also handles everything from booking to delivery seamlessly. My clients are impressed with the experience, and I've reclaimed hours each week that I can now spend behind the camera instead of managing administrative tasks. The image optimization is particularly impressive—my portfolio loads instantly without compromising quality.",
         author: "Alex Morgan",
-        position: "Lead Photographer, Pixel Perfect Photography",
+        position: "Owner & Lead Photographer, Pixel Perfect Photography",
         avatar: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=150"
       },
       deliverables: [
-        'Custom portfolio website with CMS',
-        'Booking system integration',
-        'Client portal for image delivery',
-        'SEO optimization for photography keywords',
-        'Social media integration strategy',
-        'Analytics dashboard with custom events',
+        'Custom portfolio website with client management system',
+        'Booking workflow automation',
+        'Client gallery system with access controls',
+        'SEO strategy focused on local photography keywords',
+        'Social media integration for portfolio sharing',
+        'Analytics dashboard with custom event tracking',
         'Image optimization workflow documentation'
       ],
-      timeline: '8 weeks',
+      timeline: '10 weeks',
       year: 2021
     },
     {
       id: 8,
       title: 'Urban Cycle Shop',
       category: 'E-commerce',
-      clientType: 'Bicycle Retailer',
-      clientAudience: 'Urban cyclists and commuters',
-      overview: 'Urban Cycle Shop needed an e-commerce platform to sell bicycles, accessories, and schedule maintenance services, creating a complete digital ecosystem for urban cyclists.',
-      challenge: 'Urban Cycle Shop faced intense competition from large online retailers and needed a way to differentiate themselves through expertise and service. They had a complex inventory of customizable products and services.',
-      solution: 'We created a custom e-commerce platform that combines product sales with service booking, featuring an innovative bicycle customization tool that allows customers to build their perfect urban bike. The integration between products and services creates multiple touchpoints with customers.',
+      clientType: 'Premium Bicycle Retailer & Service Center',
+      clientAudience: 'Urban commuters, cycling enthusiasts, and eco-conscious consumers',
+      overview: 'Urban Cycle Shop needed a unified digital platform to sell custom bicycles, accessories, and schedule maintenance services while building community among urban cyclists.',
+      challenge: 'Urban Cycle Shop faced intense competition from both large online retailers and local shops. They needed to leverage their expertise and service quality online, while handling the complexity of customizable products and integrating their service department into the digital experience.',
+      solution: 'We created a comprehensive e-commerce ecosystem that connects their product inventory with their service capabilities. The centerpiece is a custom bicycle configurator that makes the complex process of building a custom bike engaging and accessible, creating an experience impossible to replicate at mass-market competitors.',
       features: [
-        'Interactive bicycle builder with real-time visualization',
-        'Maintenance history tracking for registered bikes',
-        'Service scheduling with technician selection',
-        'Parts compatibility checker',
-        'Cycling route sharing community',
-        'Urban cycling safety guide with product recommendations',
-        'Bike fitting appointment booking'
+        'Interactive bicycle configurator with real-time 3D visualization',
+        'Bicycle passport system tracking ownership and maintenance history',
+        'Service scheduling with technician selection and status updates',
+        'Parts compatibility verification system',
+        'Urban route mapping and sharing community',
+        'Cycling educational content with contextual product recommendations',
+        'Workshop events and class registration'
       ],
       technologies: [
-        'WooCommerce with custom extensions',
-        'Three.js for 3D bicycle configuration',
-        'Custom product configurator',
-        'Advanced inventory management',
-        'Appointment scheduling system',
-        'PWA features for mobile users',
-        'Strava API integration'
+        'WooCommerce with extensive customizations',
+        'Three.js for 3D bicycle configuration visualization',
+        'Custom product rules engine for compatibility',
+        'Advanced inventory management with supplier integration',
+        'Progressive Web App features for mobile experience',
+        'Service management system with custom workflows',
+        'Strava API integration for community features'
       ],
       results: [
-        '245% increase in e-commerce revenue in first year',
-        '68% of online customers also book in-store services',
-        '37% higher average order value with product configurator',
+        '245% increase in e-commerce revenue within first year',
+        '68% of online customers engage with in-store services',
+        '37% higher average order value with product configurator vs. standard shopping',
         'Service department scheduling efficiency improved by 56%',
-        'Featured in Cycling Today magazine',
-        'Expanded to two new locations based on online success'
+        'Featured in Cycling Today magazine as digital innovation leader',
+        'Expanded to two new locations based on online success',
+        'Built community of over 5,000 active urban cyclists'
       ],
       images: [
         'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=800',
@@ -486,21 +492,21 @@ const Portfolio = () => {
       ],
       thumbnailImage: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=800',
       testimonial: {
-        text: "The team at Native Web Design didn't just build us an online store - they created a digital hub for urban cyclists that perfectly represents our brand values and expertise. The bicycle configurator has been a game-changer for our business.",
+        text: "Native Web Design didn't just build us an online store—they created a digital hub that embodies everything our brand stands for. The bicycle configurator has transformed how customers engage with us, allowing us to showcase our expertise and craftsmanship in a way that mass-market retailers simply can't match. The integration between our product and service offerings has created a seamless experience that keeps customers coming back throughout their cycling journey.",
         author: "James Wilson",
-        position: "Owner, Urban Cycle Shop",
+        position: "Founder & Master Technician, Urban Cycle Shop",
         avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150"
       },
       deliverables: [
-        'Custom e-commerce platform',
-        'Product configurator tool',
-        'Service booking system',
-        'Inventory management system',
-        'Staff training program',
+        'Custom e-commerce platform with 3D configurator',
+        'Service management system',
+        'Inventory and supplier integration',
+        'Community features and user accounts',
+        'Staff training and operational documentation',
         'Digital marketing launch strategy',
-        'Maintenance documentation'
+        'Performance optimization and conversion tracking'
       ],
-      timeline: '16 weeks',
+      timeline: '18 weeks',
       year: 2021
     }
   ];

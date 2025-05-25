@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Monitor, ShoppingBag, Code } from 'lucide-react';
+import { ArrowRight, Monitor, ShoppingBag, Code, MousePointer, CheckCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   // Scroll to top on component mount
@@ -58,38 +59,98 @@ const Home = () => {
     }
   ];
 
+  // Benefits
+  const benefits = [
+    { 
+      icon: <MousePointer size={24} />, 
+      title: "User-Centered Design", 
+      description: "We create websites that prioritize the needs and expectations of your users."
+    },
+    { 
+      icon: <CheckCircle size={24} />, 
+      title: "Quality Assurance", 
+      description: "Every project undergoes rigorous testing to ensure flawless performance across all devices."
+    },
+    { 
+      icon: <Code size={24} />, 
+      title: "Clean Code", 
+      description: "Our development follows best practices for maintainable, scalable and secure websites."
+    }
+  ];
+
+  // Animation variants
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-secondary-50 to-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight mb-6">
+      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-secondary-50 to-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-20">
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1617042375876-a13e36732a04?w=1600')] bg-cover bg-center opacity-30"></div>
+        </div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <motion.div 
+            className="max-w-4xl mx-auto text-center"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.2
+                }
+              }
+            }}
+          >
+            <motion.h1 
+              className="heading-xl mb-6"
+              variants={fadeIn}
+            >
               Crafting Beautiful, Purpose-Driven Websites
-            </h1>
-            <p className="text-lg md:text-xl text-secondary-700 mb-8 max-w-2xl mx-auto">
+            </motion.h1>
+            <motion.p 
+              className="body-lg mb-8 max-w-2xl mx-auto"
+              variants={fadeIn}
+            >
               We design and develop stunning websites that help your business grow, engage customers, and drive results.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button asChild size="lg" className="text-base">
+            </motion.p>
+            <motion.div 
+              className="flex flex-col sm:flex-row justify-center gap-4"
+              variants={fadeIn}
+            >
+              <Button asChild size="lg" className="text-base hover-lift">
                 <Link to="/contact">Start Your Project</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-base">
+              <Button asChild variant="outline" size="lg" className="text-base hover-lift">
                 <Link to="/portfolio">View Our Work</Link>
               </Button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
+
+        {/* Abstract shape decorations */}
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary-100 rounded-full opacity-30 -ml-20 -mb-20"></div>
+        <div className="absolute top-1/4 right-0 w-80 h-80 bg-secondary-100 rounded-full opacity-40 -mr-40"></div>
       </section>
 
       {/* Intro Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-6">
+          <motion.div 
+            className="max-w-3xl mx-auto text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <h2 className="heading-lg mb-6">
               Creating Digital Experiences That Drive Results
             </h2>
-            <p className="text-lg text-secondary-700 mb-8">
+            <p className="body-lg mb-8">
               Native Web Design is a full-service web design agency specializing in creating custom websites 
               for small businesses, startups, and entrepreneurs. We combine stunning design with strategic thinking 
               to build websites that not only look beautiful but also achieve your business goals.
@@ -100,6 +161,30 @@ const Home = () => {
                 <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Benefits Section - New */}
+      <section className="py-16 bg-white border-t border-secondary-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {benefits.map((benefit, index) => (
+              <motion.div 
+                key={index}
+                className="flex flex-col items-center text-center p-6 bg-secondary-50 rounded-lg hover-lift"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <div className="w-14 h-14 rounded-full bg-primary-100 text-primary-500 flex items-center justify-center mb-4">
+                  {benefit.icon}
+                </div>
+                <h3 className="text-xl font-serif font-medium mb-2">{benefit.title}</h3>
+                <p className="text-secondary-700">{benefit.description}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
@@ -107,18 +192,30 @@ const Home = () => {
       {/* Clients Section */}
       <section className="py-16 bg-secondary-50">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-10">
+          <motion.div 
+            className="text-center mb-10"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-xl font-serif font-medium text-secondary-500">Trusted by businesses of all sizes</h3>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center max-w-4xl mx-auto">
             {clients.map((client, index) => (
-              <div key={index} className="flex justify-center grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
+              <motion.div 
+                key={index} 
+                className="flex justify-center grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
                 <img 
                   src={client.logo} 
                   alt={client.name} 
                   className="h-12 object-contain" 
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -127,65 +224,92 @@ const Home = () => {
       {/* Services Preview */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">Our Services</h2>
-            <p className="text-lg text-secondary-700 max-w-2xl mx-auto">
+          <motion.div 
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="heading-lg mb-4">Our Services</h2>
+            <p className="body-lg max-w-2xl mx-auto">
               We offer a comprehensive range of web design and development services tailored to your unique needs.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-6 border border-secondary-100 hover:shadow-md transition-shadow">
-              <div className="mb-4 text-primary-500">
-                <Monitor size={28} />
-              </div>
-              <h3 className="text-xl font-serif font-medium mb-2">Custom Web Design</h3>
-              <p className="text-secondary-700 mb-4">
-                Bespoke website designs crafted to reflect your brand identity and meet your specific goals.
-              </p>
-              <Button asChild variant="link" className="p-0 h-auto font-medium text-primary-500 group">
-                <Link to="/services" className="flex items-center">
-                  Learn more
-                  <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-            </Card>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Card className="p-6 border border-secondary-100 hover:shadow-md transition-shadow h-full">
+                <div className="mb-4 text-primary-500">
+                  <Monitor size={28} />
+                </div>
+                <h3 className="text-xl font-serif font-medium mb-2">Custom Web Design</h3>
+                <p className="text-secondary-700 mb-4">
+                  Bespoke website designs crafted to reflect your brand identity and meet your specific goals.
+                </p>
+                <Button asChild variant="link" className="p-0 h-auto font-medium text-primary-500 group mt-auto">
+                  <Link to="/services" className="flex items-center">
+                    Learn more
+                    <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </Card>
+            </motion.div>
             
-            <Card className="p-6 border border-secondary-100 hover:shadow-md transition-shadow">
-              <div className="mb-4 text-primary-500">
-                <Code size={28} />
-              </div>
-              <h3 className="text-xl font-serif font-medium mb-2">Website Redesign</h3>
-              <p className="text-secondary-700 mb-4">
-                Transform your existing website with a fresh, modern look and improved functionality.
-              </p>
-              <Button asChild variant="link" className="p-0 h-auto font-medium text-primary-500 group">
-                <Link to="/services" className="flex items-center">
-                  Learn more
-                  <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-            </Card>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <Card className="p-6 border border-secondary-100 hover:shadow-md transition-shadow h-full">
+                <div className="mb-4 text-primary-500">
+                  <Code size={28} />
+                </div>
+                <h3 className="text-xl font-serif font-medium mb-2">Website Redesign</h3>
+                <p className="text-secondary-700 mb-4">
+                  Transform your existing website with a fresh, modern look and improved functionality.
+                </p>
+                <Button asChild variant="link" className="p-0 h-auto font-medium text-primary-500 group mt-auto">
+                  <Link to="/services" className="flex items-center">
+                    Learn more
+                    <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </Card>
+            </motion.div>
             
-            <Card className="p-6 border border-secondary-100 hover:shadow-md transition-shadow">
-              <div className="mb-4 text-primary-500">
-                <ShoppingBag size={28} />
-              </div>
-              <h3 className="text-xl font-serif font-medium mb-2">E-commerce Websites</h3>
-              <p className="text-secondary-700 mb-4">
-                Powerful online stores that drive sales with seamless shopping experiences.
-              </p>
-              <Button asChild variant="link" className="p-0 h-auto font-medium text-primary-500 group">
-                <Link to="/services" className="flex items-center">
-                  Learn more
-                  <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-            </Card>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <Card className="p-6 border border-secondary-100 hover:shadow-md transition-shadow h-full">
+                <div className="mb-4 text-primary-500">
+                  <ShoppingBag size={28} />
+                </div>
+                <h3 className="text-xl font-serif font-medium mb-2">E-commerce Websites</h3>
+                <p className="text-secondary-700 mb-4">
+                  Powerful online stores that drive sales with seamless shopping experiences.
+                </p>
+                <Button asChild variant="link" className="p-0 h-auto font-medium text-primary-500 group mt-auto">
+                  <Link to="/services" className="flex items-center">
+                    Learn more
+                    <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </Card>
+            </motion.div>
           </div>
           
           <div className="text-center mt-12">
-            <Button asChild>
+            <Button asChild className="hover-lift">
               <Link to="/services">View All Services</Link>
             </Button>
           </div>
@@ -195,16 +319,29 @@ const Home = () => {
       {/* Featured Projects */}
       <section className="py-20 bg-secondary-50">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">Featured Projects</h2>
-            <p className="text-lg text-secondary-700 max-w-2xl mx-auto">
+          <motion.div 
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="heading-lg mb-4">Featured Projects</h2>
+            <p className="body-lg max-w-2xl mx-auto">
               Explore some of our recent work and see how we've helped businesses achieve their goals.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProjects.map((project) => (
-              <div key={project.id} className="group relative overflow-hidden rounded-lg bg-white shadow-md">
+            {featuredProjects.map((project, index) => (
+              <motion.div 
+                key={project.id} 
+                className="group relative overflow-hidden rounded-lg bg-white shadow-md hover-lift"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
                 <div className="aspect-[16/10] overflow-hidden">
                   <img
                     src={project.image}
@@ -219,12 +356,12 @@ const Home = () => {
                     <Link to={`/portfolio/${project.id}`}>View Project</Link>
                   </Button>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           
           <div className="text-center mt-12">
-            <Button asChild variant="outline">
+            <Button asChild variant="outline" className="hover-lift">
               <Link to="/portfolio" className="flex items-center">
                 View All Projects
                 <ArrowRight size={16} className="ml-2" />
@@ -237,48 +374,72 @@ const Home = () => {
       {/* Testimonials */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">What Our Clients Say</h2>
-            <p className="text-lg text-secondary-700 max-w-2xl mx-auto">
+          <motion.div 
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="heading-lg mb-4">What Our Clients Say</h2>
+            <p className="body-lg max-w-2xl mx-auto">
               Don't just take our word for it. Hear from our satisfied clients about their experience working with us.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="p-8 border border-secondary-100">
-                <div className="flex items-center gap-4 mb-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-14 h-14 rounded-full object-cover"
-                  />
-                  <div>
-                    <h4 className="font-medium text-lg">{testimonial.author}</h4>
-                    <p className="text-secondary-500 text-sm">{testimonial.position}</p>
+            {testimonials.map((testimonial, index) => (
+              <motion.div 
+                key={testimonial.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className="p-8 border border-secondary-100 hover:shadow-md transition-shadow h-full">
+                  <div className="flex items-center gap-4 mb-4">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.author}
+                      className="w-14 h-14 rounded-full object-cover"
+                    />
+                    <div>
+                      <h4 className="font-medium text-lg">{testimonial.author}</h4>
+                      <p className="text-secondary-500 text-sm">{testimonial.position}</p>
+                    </div>
                   </div>
-                </div>
-                <p className="text-secondary-700 italic">{testimonial.text}</p>
-              </Card>
+                  <p className="text-secondary-700 italic">{testimonial.text}</p>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary-500 text-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-6">
+      <section className="py-20 bg-primary-500 text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute -right-20 -top-20 w-80 h-80 bg-white/10 rounded-full"></div>
+          <div className="absolute -left-20 -bottom-20 w-60 h-60 bg-white/10 rounded-full"></div>
+        </div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <motion.div 
+            className="max-w-3xl mx-auto text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="heading-lg mb-6 text-white">
               Ready to Start Your Project?
             </h2>
             <p className="text-lg mb-8 text-white/90">
               Let's work together to create a beautiful, purpose-driven website that helps your business succeed online.
             </p>
-            <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary-500">
+            <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary-500 hover-lift">
               <Link to="/contact">Contact Us Today</Link>
             </Button>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
