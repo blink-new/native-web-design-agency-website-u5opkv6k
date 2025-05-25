@@ -63,3 +63,150 @@
     font-family: 'Playfair Display', serif;
   }
 }
+
+/* Custom Animations */
+@layer utilities {
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+  
+  .hover-grow {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-soft {
+  @apply bg-gradient-to-b from-secondary-50 to-white;
+}
+
+/* Image Styling */
+.portfolio-image {
+  @apply object-cover w-full h-full transition-all duration-500;
+}
+
+/* Typography Utilities */
+.heading-xl {
+  @apply text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight;
+}
+
+.heading-lg {
+  @apply text-3xl md:text-4xl font-serif font-semibold;
+}
+
+.heading-md {
+  @apply text-2xl md:text-3xl font-serif font-medium;
+}
+
+.body-lg {
+  @apply text-lg md:text-xl text-secondary-700;
+}
+
+.body-md {
+  @apply text-base text-secondary-700;
+}
+
+/* Earthy Neutrals and Terracotta Accent */
+@layer base {
+  :root {
+    --background: 35 15% 70%;
+    --foreground: 35 10% 40%;
+    --card: 35 10% 80%;
+    --card-foreground: 35 10% 40%;
+    --popover: 35 10% 80%;
+    --popover-foreground: 35 10% 40%;
+    --primary: 35 30% 90%;
+    --primary-foreground: 35 10% 40%;
+    --secondary: 35 15% 60%;
+    --secondary-foreground: 35 10% 40%;
+    --muted: 35 15% 50%;
+    --muted-foreground: 35 10% 30%;
+    --accent: 35 15% 50%;
+    --accent-foreground: 35 10% 40%;
+    --destructive: 35 10% 30%;
+    --destructive-foreground: 35 10% 70%;
+    --border: 35 15% 60%;
+    --input: 35 15% 60%;
+    --ring: 35 15% 80%;
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --background: 35 10% 10%;
+    --foreground: 35 15% 90%;
+    --card: 35 10% 12%;
+    --card-foreground: 35 15% 90%;
+    --popover: 35 10% 12%;
+    --popover-foreground: 35 15% 90%;
+    --primary: 35 30% 90%;
+    --primary-foreground: 35 10% 40%;
+    --secondary: 35 15% 25%;
+    --secondary-foreground: 35 15% 90%;
+    --muted: 35 15% 20%;
+    --muted-foreground: 35 10% 60%;
+    --accent: 35 15% 25%;
+    --accent-foreground: 35 15% 90%;
+    --destructive: 35 10% 20%;
+    --destructive-foreground: 35 15% 90%;
+    --border: 35 15% 25%;
+    --input: 35 15% 25%;
+    --ring: 35 15% 45%;
+  }
+}
+
+/* Terracotta Accent */
+@layer base {
+  :root {
+    --accent: 35 15% 50%;
+    --accent-foreground: 35 10% 40%;
+  }
+  
+  .dark {
+    --accent: 35 15% 25%;
+    --accent-foreground: 35 15% 90%;
+  }
+}
+
+/* Earthy Neutrals */
+@layer base {
+  :root {
+    --background: 35 15% 70%;
+    --foreground: 35 10% 40%;
+    --card: 35 10% 80%;
+    --card-foreground: 35 10% 40%;
+    --popover: 35 10% 80%;
+    --popover-foreground: 35 10% 40%;
+    --primary: 35 30% 90%;
+    --primary-foreground: 35 10% 40%;
+    --secondary: 35 15% 60%;
+    --secondary-foreground: 35 10% 40%;
+    --muted: 35 15% 50%;
+    --muted-foreground: 35 10% 30%;
+    --destructive: 35 10% 30%;
+    --destructive-foreground: 35 10% 70%;
+    --border: 35 15% 60%;
+    --input: 35 15% 60%;
+    --ring: 35 15% 80%;
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --background: 35 10% 10%;
+    --foreground: 35 15% 90%;
+    --card: 35 10% 12%;
+    --card-foreground: 35 15% 90%;
+    --popover: 35 10% 12%;
+    --popover-foreground: 35 15% 90%;
+    --primary: 35 30% 90%;
+    --primary-foreground: 35 10% 40%;
+    --secondary: 35 15% 25%;
+    --secondary-foreground: 35 15% 90%;
+    --muted: 35 15% 20%;
+    --muted-foreground: 35 10% 60%;
+    --destructive: 35 10% 20%;
+    --destructive-foreground: 35 15% 90%;
+    --border: 35 15% 25%;
+    --input: 35 15% 25%;
+    --ring: 35 15% 45%;
+  }
+}
