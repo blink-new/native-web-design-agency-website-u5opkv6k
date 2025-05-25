@@ -1,3 +1,4 @@
+// Scroll to top on component mount
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Monitor, ShoppingBag, Code, MousePointer, CheckCircle } from 'lucide-react';
@@ -23,20 +24,20 @@ const Home = () => {
   const featuredProjects = [
     {
       id: 1,
-      title: 'Bloom Floral Studio',
-      image: 'https://images.unsplash.com/photo-1558905511-25d6800b5dc3?w=800',
+      title: 'Rosemary Artisan Bakery',
+      image: 'https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=800',
       category: 'E-commerce',
     },
     {
       id: 2,
-      title: 'Atlas Fitness App',
-      image: 'https://images.unsplash.com/photo-1598520106830-8c45c2035460?w=800',
+      title: 'Vertex Fitness Platform',
+      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800',
       category: 'Mobile App',
     },
     {
       id: 3,
-      title: 'Savant Financial',
-      image: 'https://images.unsplash.com/photo-1553484771-689577a88a45?w=800',
+      title: 'Meridian Capital Advisors',
+      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800',
       category: 'Web Design',
     },
   ];
@@ -45,17 +46,17 @@ const Home = () => {
   const testimonials = [
     {
       id: 1,
-      text: "Native Web Design brought our vision to life with their creativity and technical expertise. Our new website has significantly increased our online sales.",
-      author: "Jane Cooper",
-      position: "CEO, Bloom Floral Studio",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150"
+      text: "Working with Native Web Design transformed our business completely. Before their help, we were drowning in paper orders and spreadsheets. Now we have a beautiful website that not only showcases our products exactly how we want but also streamlines our entire ordering process.",
+      author: "Sofia Mendez",
+      position: "Owner & Head Baker, Rosemary Artisan Bakery",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150"
     },
     {
       id: 2,
-      text: "Working with Native Web Design was a seamless experience. They delivered our project on time and within budget, exceeding all our expectations.",
-      author: "David Mitchell",
-      position: "Founder, Atlas Fitness",
-      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150"
+      text: "Native Web Design created exactly what we needed - not just an app, but a complete digital extension of our brand and training philosophy. Their team took the time to understand our unique approach to fitness and translated it into an engaging digital experience.",
+      author: "Marcus Reeves",
+      position: "Founder & Head Coach, Vertex Fitness",
+      image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=150"
     }
   ];
 

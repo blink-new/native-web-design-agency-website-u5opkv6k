@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
+import ProjectDetail from './pages/ProjectDetail';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -41,6 +42,14 @@ function App() {
           element={
             <Layout>
               <Portfolio />
+            </Layout>
+          } 
+        />
+        <Route 
+          path="/portfolio/:id" 
+          element={
+            <Layout>
+              <ProjectDetail />
             </Layout>
           } 
         />
