@@ -216,8 +216,8 @@ export const projects: Project[] = [
     clientType: 'Integrative Health Practice',
     clientAudience: 'Individuals seeking holistic healthcare, stress management, and preventative wellness services',
     overview: 'Serene Wellness Center needed a website that would communicate their integrated approach to health, simplify the appointment booking process, and educate potential clients about their diverse treatment options.',
-    challenge: 'Serene was expanding their services but struggling with a digital presence that didn't effectively explain their holistic approach. Potential clients were confused about treatment options and hesitant to book due to uncertainty. Their existing website was clinically focused and uninviting, failing to convey the warm, supportive experience the center provides.',
-    solution: 'We designed a welcoming, informative digital experience that guides visitors through Serene's unique wellness philosophy. The site uses calming visuals, clear service explanations, and intuitive user flows to help visitors understand treatment options and benefits. We implemented a frictionless booking system that improved conversion rates while reducing administrative workload.',
+    challenge: 'Serene was expanding their services but struggling with a digital presence that didn\'t effectively explain their holistic approach. Potential clients were confused about treatment options and hesitant to book due to uncertainty. Their existing website was clinically focused and uninviting, failing to convey the warm, supportive experience the center provides.',
+    solution: 'We designed a welcoming, informative digital experience that guides visitors through Serene\'s unique wellness philosophy. The site uses calming visuals, clear service explanations, and intuitive user flows to help visitors understand treatment options and benefits. We implemented a frictionless booking system that improved conversion rates while reducing administrative workload.',
     features: [
       'Interactive wellness assessment with personalized recommendations',
       'Practitioner matching based on health needs and preferences',
@@ -280,7 +280,7 @@ export const projects: Project[] = [
     clientAudience: 'Environmentally conscious consumers, homeowners interested in sustainable living',
     overview: 'GreenHaven needed an e-commerce platform that would showcase their curated collection of sustainable home products while educating consumers about environmental impact and ethical sourcing.',
     challenge: 'GreenHaven was struggling to communicate the value of their premium eco-friendly products online. Customers were price-comparing with conventional alternatives without understanding the quality differences, sustainability benefits, or long-term value. Their existing website failed to tell the story behind their products or build an emotional connection with their conscious consumer target audience.',
-    solution: 'We developed an immersive e-commerce experience that balanced education with conversion optimization. Each product includes sustainability metrics, origin stories, and impact information alongside traditional e-commerce features. The site architecture creates a journey that reinforces the brand's values while making sustainable shopping effortless.',
+    solution: 'We developed an immersive e-commerce experience that balanced education with conversion optimization. Each product includes sustainability metrics, origin stories, and impact information alongside traditional e-commerce features. The site architecture creates a journey that reinforces the brand\'s values while making sustainable shopping effortless.',
     features: [
       'Environmental impact dashboard showing customer contribution',
       'Product filtering by eco-certification and ethical standards',
@@ -343,7 +343,7 @@ export const projects: Project[] = [
     clientAudience: 'Music students of all ages, parents, and professional musicians seeking advanced training',
     overview: 'Harmonia Music Academy needed a digital platform to showcase their comprehensive music education programs, facilitate student enrollment, and provide resources for existing students.',
     challenge: 'Harmonia was a respected music institution with 40+ years of history but was losing potential students to more digitally savvy competitors. Their enrollment process was entirely paper-based, their curriculum information was scattered, and they had no way to showcase student achievements or faculty expertise online. They needed to modernize while honoring their traditional approach to music education.',
-    solution: 'We created a sophisticated yet approachable website that balances artistic expression with clear information architecture. The platform showcases faculty credentials, student performances, and program details while simplifying the enrollment process. Custom audio and video integration allows visitors to experience the academy's teaching quality directly.',
+    solution: 'We created a sophisticated yet approachable website that balances artistic expression with clear information architecture. The platform showcases faculty credentials, student performances, and program details while simplifying the enrollment process. Custom audio and video integration allows visitors to experience the academy\'s teaching quality directly.',
     features: [
       'Faculty profiles with audio samples and performance videos',
       'Interactive program explorer with curriculum details',
@@ -405,7 +405,7 @@ export const projects: Project[] = [
     clientType: 'Adventure Travel Company',
     clientAudience: 'Active travelers, outdoor enthusiasts, and experience-seeking tourists',
     overview: 'Horizon Adventure Tours needed a comprehensive rebrand and website that would showcase their unique expedition offerings and streamline their booking process for multi-day adventure trips.',
-    challenge: 'Horizon had built a solid reputation for exceptional adventure experiences but their digital presence failed to capture the excitement of their tours or effectively convert interest into bookings. Their trip information was disorganized, booking was complicated, and their visual identity didn't reflect the premium nature of their experiences. They were losing potential customers in a competitive market.',
+    challenge: 'Horizon had built a solid reputation for exceptional adventure experiences but their digital presence failed to capture the excitement of their tours or effectively convert interest into bookings. Their trip information was disorganized, booking was complicated, and their visual identity didn\'t reflect the premium nature of their experiences. They were losing potential customers in a competitive market.',
     solution: 'We developed a comprehensive brand identity and immersive website that captures the thrill of adventure travel while providing clear information and simple booking processes. The design uses dynamic imagery, interactive maps, and engaging storytelling to inspire visitors while guiding them through detailed trip information and seamless reservation flows.',
     features: [
       'Interactive destination maps with tour route visualization',
